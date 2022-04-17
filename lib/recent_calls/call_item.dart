@@ -19,7 +19,7 @@ class _CallCardState extends State<CallCard> {
             alignment: Alignment.center,
             child: const Icon(
               Icons.phone_forwarded,
-              color: Colors.black26,
+              color: Colors.orange,
               size: 21,
             ),
           ),
