@@ -12,8 +12,12 @@ class proverca extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: Icon(
-          Icons.arrow_back,
+        title: IconButton(
+          icon : Icon(Icons.arrow_back,),
+          onPressed: (() {
+            
+          }),
+
         )),
       ),
     );
