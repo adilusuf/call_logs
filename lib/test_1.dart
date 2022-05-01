@@ -10,18 +10,25 @@ class proverca extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
         home: Scaffold(
       appBar: AppBar(
-        title:
-        Container(
-          child: IconButton(
-            icon : Icon(Icons.arrow_back,),color: Colors.black,
-            onPressed: (() {
-            }),
-          ),
+        centerTitle: true,
+        leading:  IconButton(
+          icon : Icon(Icons.arrow_back,),color: Colors.white,
+          onPressed: (() {
+          }),
         ),
-    
+        title: Text('анифа шеф',style: TextStyle(color: Colors.white),),
+        actions: [ IconButton(
+          icon : Icon(Icons.settings),color: Colors.white,
+          onPressed: (() {
+          }),
         ),
+       ],
+       
+      ),
+      body: Column(children: [Row(children: [Container(child: Text('я',style: TextStyle(color: Colors.red,fontSize: 28),textAlign: TextAlign.center,)),],)]),
       ),
     );
   }
