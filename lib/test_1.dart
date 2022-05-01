@@ -28,7 +28,14 @@ class proverca extends StatelessWidget {
        ],
        
       ),
-      body: Column(children: [Row(children: [Container(child: Text('я',style: TextStyle(color: Colors.red,fontSize: 28),textAlign: TextAlign.center,)),],)]),
+      body: Column(children:
+      [Row(
+        children: [
+          Container(child: Text('я',style: TextStyle(color: Colors.indigo),),),
+        ],
+      )
+      
+      ]),
       ),
     );
   }
