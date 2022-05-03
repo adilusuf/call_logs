@@ -8,8 +8,10 @@ class sound_stream extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(appBar: AppBar(title: Text('Главная'),)),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(appBar:AppBar (title: Text('Главная',style: TextStyle( color: Color.fromARGB(255, 66, 64, 64)) ),),));
       
-    );
+    
   }
 }
