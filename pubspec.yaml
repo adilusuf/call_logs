@@ -38,13 +38,14 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-    flutter_native_splash: ^2.0.1+1
+
+  flutter_native_splash: ^2.0.1+1
     # Run commands to generate splash screen
      #1) flutter clean
      #2) flutter pub get
      #3) flutter pub run flutter_native_splash: create
 
-  flutter_native_splash:
+flutter_native_splash:
     color: "#ffffff"
     image: assets/halidov_rulit.png
 
@@ -56,7 +57,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^1.0.0
+flutter_lints: ^1.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
