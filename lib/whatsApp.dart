@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -10,11 +9,12 @@ class WhatsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-      appBar: AppBar(
-        leading: Text('WhatsApp',style: TextStyle(color: Colors.grey),
+      appBar: AppBar(backgroundColor: Color.fromARGB(255, 51, 49, 49),
+        title: Text('WhatsApp',style: TextStyle(color: Colors.grey),
         ),
-        actions: [Icon(Icons.search),Icon(Icons.power_settings_new)],
+        actions: [Icon(Icons.search),Icon(Icons.more_vert)],
         )
     ),
     );
