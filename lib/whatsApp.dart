@@ -9,8 +9,14 @@ class WhatsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(appBar: AppBar(leading: Text('WhatsApp',style: TextStyle(color: Colors.grey),),)),
-      
+    return MaterialApp(
+      home: Scaffold(
+      appBar: AppBar(
+        leading: Text('WhatsApp',style: TextStyle(color: Colors.grey),
+        ),
+        actions: [Icon(Icons.search),Icon(Icons.power_settings_new)],
+        )
+    ),
     );
   }
 }
