@@ -12,7 +12,33 @@ class _RecentCallsState extends State<RecentCalls> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Журнал звонков')),
+      appBar: AppBar(title: const Text('Журнал звонков'),
+       actions: [
+          IconButton(
+          icon: Icon(Icons.search),
+              onPressed: () => {print("Click on settings button")}),
+               PopupMenuButton(
+              icon: Icon(Icons.more_vert),
+              itemBuilder: (context) => [
+                PopupMenuItem(
+                  value: 1,
+                  child: Text("Новая группа"),
+               ),
+               PopupMenuItem(
+                  value: 2,
+                  child: Text("Новая рассылка"),
+               ),
+               PopupMenuItem(
+                  value: 2,
+                  child: Text("Связанные устройства"),
+               ),PopupMenuItem(
+                  value: 2,
+                  child: Text("Избранные сообшения"),),
+                  PopupMenuItem(
+                  value: 2,
+                  child: Text("Настройки"),)]
+      )],
+      ),
       body: ListView.separated(
         itemBuilder: (_, int index) => const CallCard(),
         separatorBuilder: (_, int index) => const Padding(
