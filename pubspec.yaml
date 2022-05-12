@@ -55,7 +55,7 @@ dev_dependencies:
 
 flutter_native_splash:
   color: "#ffffff"
-  image: assets/splash.png
+  image: assets/Android large.png
 flutter_icons:
  android: "launcher_icon"
  image_path: assets/halidov_rulit.png
